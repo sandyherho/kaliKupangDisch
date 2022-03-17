@@ -35,7 +35,7 @@ fig.axes[0].set_title('(a)', fontsize=20)
 fig.tight_layout();
 fig.savefig('../figs/fig6a.png');
 
-fig, ax = model.plot_corner(figsize=(15, 15));
+fig, ax = model.plot_corner(figsize=(15, 15), levels=10);
 fig.axes[0].set_title('(b)', fontsize=20);
 fig.tight_layout();
 fig.savefig('../figs/fig6b.png');

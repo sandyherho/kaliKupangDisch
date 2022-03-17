@@ -16,7 +16,7 @@ plt.rcParams['figure.figsize'] = [15, 6]
 plt.rcParams['figure.dpi'] = 1000
 
 # interpolation
-df = pd.read_csv('kupang_raw_data.csv', 
+df = pd.read_csv('../data/kupang_raw_data.csv', 
                  index_col='time', parse_dates=True)
 
 df_interp = df.interpolate(method='pchip')
@@ -50,6 +50,8 @@ ax.set_xlabel('discharge (m$^3$)');
 fig.tight_layout();
 fig.savefig('../figs/fig4.png')
 
+print("Kurtosis: ", df.kurtosis()) # 2.36
+print("Skewness: ", df.skew()) # 1.38
 from scipy.stats import shapiro
 data = df_interp['discharge']
 stat, p = shapiro(data)

@@ -34,4 +34,4 @@ plt.ylabel('std. of annual discharge');
 plt.xlabel('time (year)');
 plt.xticks(np.arange(0, 36, 5), ['1975','1980','1985','1990','1995','2000','2005','2010'])
 plt.tight_layout();
-plt.savefig('../figs/fig5.png')
+plt.savefig('../figs/fig8.png')

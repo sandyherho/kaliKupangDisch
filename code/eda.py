@@ -13,7 +13,7 @@ import seaborn as sns
 
 plt.style.use('ggplot')
 plt.rcParams['figure.figsize'] = [15, 6]
-plt.rcParams['figure.dpi'] = 1000
+plt.rcParams['figure.dpi'] = 300
 
 # interpolation
 df = pd.read_csv('../data/kupang_raw_data.csv', 

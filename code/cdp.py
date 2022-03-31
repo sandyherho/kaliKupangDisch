@@ -13,10 +13,10 @@ import ruptures as rpt
 plt.style.use('ggplot')
 
 plt.rcParams['figure.figsize'] = [17, 8]
-plt.rcParams['figure.dpi'] = 1000
+plt.rcParams['figure.dpi'] = 300
 
 # annual std. calc.
-df = pd.read_csv('interpolated_kupang.csv', 
+df = pd.read_csv('../data/interpolated_kupang.csv', 
                  index_col='time', parse_dates=True)
 discharge_std = df.resample('Y').std()
 std = discharge_std.to_numpy().flatten()

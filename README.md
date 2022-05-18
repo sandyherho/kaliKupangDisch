@@ -7,11 +7,11 @@ This GitHub repository contains code used for **A univariate extreme value analy
 
 ### License
 
-This code is released under the [GPL-3.0 License](https://github.com/sandyherho/ensoIndoRice/blob/main/LICENSE).
+This code is released under the [GPL-3.0 License](https://github.com/sandyherho/kaliKupangDisch/blob/main/LICENCE).
 
 ### Cite
 
-If you find this code useful in your study, please, consider citing our paper:
+If you find this code useful in your study, please, consider citing my paper:
 
 `
 @article{herho21,
@@ -29,12 +29,19 @@ If you find this code useful in your study, please, consider citing our paper:
 
 I run the code under the Python 3.10.2 by using the following libraries:
 
-- emcee 3.1.1
-- matplotlib 3.5.1
-- numpy 1.22.3
-- pandas 1.4.1
-- pyextremes 2.2.4
-- pygmt 0.6.0
-- ruptures 1.1.6
-- scipy 1.8.0
-- seaborn 0.11.2 
+- [emcee](https://emcee.readthedocs.io/en/stable/) 3.1.1
+- [matplotlib](https://matplotlib.org/) 3.5.1
+- [numpy](https://numpy.org/) 1.22.3
+- [pandas](https://pandas.pydata.org/) 1.4.1
+- [pyextremes](https://georgebv.github.io/pyextremes/) 2.2.4
+- [pygmt](https://www.pygmt.org/latest/) 0.6.0
+- [ruptures](https://centre-borelli.github.io/ruptures-docs/) 1.1.6
+- [scipy](https://scipy.org/) 1.8.0
+- [seaborn](https://seaborn.pydata.org/) 0.11.2 
+
+
+Data for this study were obtained from the [Global Runoff Data Centre (GRDC) database](https://www.bafg.de/GRDC/) (accessed 17 May 2022) at the German Federal Institute of Hydrology (BfG) in Koblenz, Germany.
+
+### Acknowledgements
+
+Amanda O'Shaughnessy, Cullen Simon, Gisma Firdaus, Karen Prestegaard, Joseph Malin, Julianne Farnham, Samantha Volz, and Sydney Shelton are acknowledged for providing valuable discussion. This study was supported by NSF grant AGS1903626.

@@ -30,7 +30,7 @@ print(discharge_std.iloc[result[0]:result[-1]]) # DETECT PERIOD
 
 rpt.display(np.log(std), result);
 plt.xlim([0, len(std + 1)]);
-plt.ylabel('std. of annual discharge');
+plt.ylabel('$\ln{(s)}$');
 plt.xlabel('time (year)');
 plt.xticks(np.arange(0, 36, 5), ['1975','1980','1985','1990','1995','2000','2005','2010'])
 plt.tight_layout();

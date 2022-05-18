@@ -24,7 +24,7 @@ df_interp.to_csv('interpolated_kupang.csv')
 
 plt.plot(df, 'kx');
 plt.plot(df_interp);
-plt.ylabel('discharge (m$^{3}$)', fontsize=14);
+plt.ylabel('discharge (m$^{3}$/s)', fontsize=14);
 plt.xlabel('time (month)', fontsize=14);
 plt.tight_layout();
 plt.savefig('../figs/fig2.png');
@@ -35,7 +35,7 @@ df_interp.groupby(df_interp.index.month)["discharge"].mean().plot(kind='bar',
                                                         color='#0f82d4', 
                                                         rot=0, ax=ax);
 ax.set_xlabel('month', fontsize=14);
-ax.set_ylabel('discharge (m$^{3}$)', fontsize=14);
+ax.set_ylabel('discharge (m$^{3}$/s)', fontsize=14);
 
 labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May','Jun',
           'Jul','Aug','Sep','Oct','Nov','Dec']
@@ -46,7 +46,7 @@ fig.savefig('../figs/fig3.png');
 # normality test
 fig, ax = plt.subplots()
 sns.distplot(df_interp, ax=ax)
-ax.set_xlabel('discharge (m$^3$)');
+ax.set_xlabel('discharge (m$^3$/s)');
 fig.tight_layout();
 fig.savefig('../figs/fig4.png')
 

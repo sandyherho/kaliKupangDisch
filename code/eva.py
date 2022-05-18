@@ -2,7 +2,7 @@
 eva.py: extreme value analysis with BM
 
 Sandy H. S. Herho <herho@umd.edu> 
-03/17/2022 
+05/18/2022 
 """
 
 # import libs
@@ -28,6 +28,13 @@ model.get_extremes(method="BM", extremes_type="high",
 
 model.fit_model(model='Emcee', n_walkers=500, n_samples=2500)
 print(model)
+
+# plot BM
+fig, ax = model.plot_extremes(figsize=(15,6))
+ax.set_xlabel('time (month)', fontsize=14);
+ax.set_ylabel('discharge(m$^3$/s)', fontsize=14);
+fig.tight_layout();
+fig.savefig('../figs/fig5.png')
 
 # mcmc trace figs
 fig, ax = model.plot_trace(figsize=(15, 8))
@@ -56,12 +63,6 @@ return_periods = get_return_periods(ts=ts, extremes=extremes, extremes_method="B
 rp =return_periods.sort_values("return period", ascending=False)
 rp.to_csv('../data/high_return_periods.csv')
 
-# plot extremes
-fig, ax = model.plot_extremes(figsize=(15,6))
-ax.set_xlabel('time (year)', fontsize=14);
-ax.set_ylabel('discharge (m$^3$)', fontsize=14);
-fig.tight_layout();
-fig.savefig('../figs/fig7.png')
 
 # plot return periods
 fig,ax = model.plot_diagnostic(alpha=0.95, figsize=(18,12))
@@ -72,9 +73,9 @@ fig.axes[2].set_title('(c)', fontsize=20)
 fig.axes[3].set_title('(d)', fontsize=20)
 
 fig.axes[0].set_xlabel('return period (year)', fontsize=14)
-fig.axes[0].set_ylabel('discharge (m$^3$)', fontsize=14)
+fig.axes[0].set_ylabel('discharge (m$^3$/s)', fontsize=14)
 
-fig.axes[1].set_xlabel('discharge (m$^3$)', fontsize=14)
+fig.axes[1].set_xlabel('discharge (m$^3$/s)', fontsize=14)
 fig.axes[1].set_ylabel('probability density', fontsize=14)
 
 fig.axes[2].set_xlabel('theoretical', fontsize=14)
@@ -84,4 +85,4 @@ fig.axes[3].set_xlabel('theoretical', fontsize=14)
 fig.axes[3].set_ylabel('observed', fontsize=14)
 
 sns.despine(left=True)
-fig.savefig('../figs/fig8.png')
+fig.savefig('../figs/fig7.png')

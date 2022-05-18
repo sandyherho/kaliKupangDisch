@@ -27,7 +27,7 @@ If you find this code useful in your study, please, consider citing my paper:
 `
 ### Requirements
 
-I run the code under the Python 3.10.2 by using the following libraries:
+I run the code under the [Python](https://www.python.org/) 3.10.2 by using the following libraries:
 
 - [emcee](https://emcee.readthedocs.io/en/stable/) 3.1.1
 - [matplotlib](https://matplotlib.org/) 3.5.1

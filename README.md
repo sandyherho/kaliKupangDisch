@@ -16,18 +16,18 @@ This code is released under the [GPL-3.0 License](https://github.com/sandyherho/
 
 If you find this code useful in your study, please, consider citing my paper:
 
-`
+```
 @article{herho21,
          author={Herho, S. H. S.},
-         title={xxx},
-         journal={xxx},
-         year={202x},
-         volume={x},
-         number={x},
-         pages={x - x},
-         doi={xx}
+         title={A Univariate Extreme Value Analysis and Change Point Detection of Monthly Discharge in Kali Kupang, Central Java, Indonesia},
+         journal={JOIV : Int. J. Inform. Visualization},
+         year={2022},
+         volume={6},
+         number={4},
+         pages={862 - 868},
+         doi={http://dx.doi.org/10.30630/joiv.6.4.953}
 }
-`
+```
 ### Requirements
 
 I run the code under the [Python](https://www.python.org/) 3.10.2 by using the following libraries:
